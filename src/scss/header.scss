@@ -1,0 +1,96 @@
+/*header*/
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  z-index: 999;
+  .nav-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    background: white;
+  }
+}
+
+.hamburger {
+  width: 24px;
+  height: 24px;
+}
+
+.nav {
+  position: absolute;
+  background: $white;
+  text-align: center;
+  transform-origin: top;
+  transition: transform 0.3s ease-out;
+  transform: scale(1, 0);
+  .nav-item {
+    margin-top: 36px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid $light-gray;
+    a {
+      color: $checked-color;
+    }
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    .icon {
+      height: 24px;
+      margin: 1rem 2rem;
+    }
+  }
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.navbar-toggle:checked ~ .nav {
+  transform-origin: top;
+  transition: transform 0.3s ease-out;
+  transform: scale(1, 1);
+}
+
+.navbar-brand {
+  height: 30px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.just-block {
+  height: 60px;
+}
+@media screen and (min-width: 375px) {
+  /*header*/
+  .nav,
+  .nav-item {
+    all: unset;
+  }
+  .nav-list {
+    height: 100%;
+    width: 33%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nav-item {
+      border-bottom: none;
+    }
+  }
+  .nav .icons {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    .icon {
+      margin: 1rem;
+    }
+  }
+
+  .hamburger-box {
+    display: none;
+  }}
