@@ -1,5 +1,8 @@
 # alpha-shop-vue
 
+![show page](./1.PNG)
+![show page](./2.PNG)
+
 ## Project setup
 ```
 npm install
